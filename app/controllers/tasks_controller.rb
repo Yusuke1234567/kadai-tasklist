@@ -1,4 +1,4 @@
-class MessagesController < ApplicationController
+class TasksController < ApplicationController
   def index
     @tasks = Task.all
   end
@@ -11,16 +11,10 @@ class MessagesController < ApplicationController
     @task = Task.new
   end
 
-  def create
-  end
 
   def edit
     @task = Task.find(params[:id])
   end
 
-  def update
-  end
 
-  def destroy
-  end
 end
