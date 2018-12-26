@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tasklist</title>
+    <status>Tasklist</status>
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,12 +19,6 @@
 
     <div class="container">
       <%= render 'layouts/flash_tasks' %>
-      <div class="row">
-      <div class="col-xs-6">col-xs-6</div>
-      <div class="col-xs-12">col-xs-12</div>
-      <div class="col-sm-offset-2 col-sm-8">col-sm-8</div>
-      <div class="col-lg-offset-3 col-lg-6">col-lg-6</div>
-      </div>
       <%= yield %>
     </div>
   </body>
